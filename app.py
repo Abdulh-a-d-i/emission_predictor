@@ -95,7 +95,7 @@ with col1:
         # Engine Size
         engine_cc = st.selectbox(
             "Engine Size (cc)",
-            options=[1000, 1200, 1500, 1800, 2000, 2200, 2500, 2800, 3000, 3200, 3500, 3800, 4000, 4500, 5000],
+            options=[660, 800, 1000, 1200, 1500, 1800, 2000, 2200, 2500, 2800, 3000, 3200, 3500, 3800, 4000, 4500, 5000],
             index=4,
             help="Select your vehicle's engine displacement"
         )
