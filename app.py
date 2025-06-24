@@ -4,6 +4,7 @@ import joblib
 from PIL import Image
 import matplotlib.pyplot as plt
 import seaborn as sns
+import urllib.request
 
 # Set page config
 st.set_page_config(
