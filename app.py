@@ -18,7 +18,7 @@ st.set_page_config(
 def load_model():
     try:
         # Replace with your Google Drive direct download link
-        url = "https://drive.google.com/file/d/19lyMxgVSDg05qscSSUClIlbTvOvP3sBK/view?usp=sharing"
+        url = "https://drive.google.com/uc?export=download&id=19lyMxgVSDg05qscSSUClIlbTvOvP3sBK"
         filename, _ = urllib.request.urlretrieve(url)
         return joblib.load(filename)
     except Exception as e:
