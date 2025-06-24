@@ -54,8 +54,8 @@ with st.sidebar:
     """)
     
     st.markdown("---")
-    st.markdown("**Project by:** Abdul Hadi (L1s22bscs0351 & L1s22bscs0012)")
-    st.markdown("**Course:** BSCS - Machine Learning")
+    st.markdown("**Project by:** Abdul Hadi (L1S22BSCS0351)")
+    st.markdown("**Course:** BSCS - Introductiion to Data Science")
 
 # Main content
 col1, col2 = st.columns([1, 1])
