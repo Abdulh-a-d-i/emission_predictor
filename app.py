@@ -17,9 +17,13 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        return joblib.load('co2_emission_predictor_rf.pkl')
-    except:
-        return joblib.load('co2_emission_predictor_lr.pkl')
+        # Replace with your Google Drive direct download link
+        url = "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
+        filename, _ = urllib.request.urlretrieve(url)
+        return joblib.load(filename)
+    except Exception as e:
+        st.error(f"Error loading model: {e}")
+        return None
 
 model = load_model()
 
