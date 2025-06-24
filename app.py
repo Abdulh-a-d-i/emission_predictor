@@ -20,7 +20,7 @@ def load_model():
     try:
         # Replace with your Google Drive direct download link
         url = "https://drive.google.com/uc?export=download&id=19lyMxgVSDg05qscSSUClIlbTvOvP3sBK"
-        filename, _ = urllib.request.urlretrieve("co2_emission_predictor_rf.pkl")
+        filename, _ = urllib.request.urlretrieve(url,"co2_emission_predictor_rf.pkl")
         return joblib.load(filename)
     except Exception as e:
         st.error(f"Error loading model: {e}")
